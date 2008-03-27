@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSViewer", "FileSystemViewer\FSViewer.csproj", "{5E9F3F53-3A79-44A2-8A6D-89A2AC0B5BE8}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E9F3F53-3A79-44A2-8A6D-89A2AC0B5BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9F3F53-3A79-44A2-8A6D-89A2AC0B5BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9F3F53-3A79-44A2-8A6D-89A2AC0B5BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9F3F53-3A79-44A2-8A6D-89A2AC0B5BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
