@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title> </title>    
+    <title> </title>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jomura.net/FSViewer/backuplog.aspx?format=rss" />
     <style type="text/css">
     a {text-decoration:none;}
     </style>
