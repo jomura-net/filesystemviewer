@@ -4,7 +4,8 @@
     {
 	    // RSS
 	    Response.ContentType = "text/xml; charset=UTF-8";
-        string linkUrl = Request.Url.ToString().Substring(0, Request.Url.ToString().Length - Request.Url.Query.Length);
+//        string linkUrl = Request.Url.ToString().Substring(0, Request.Url.ToString().Length - Request.Url.Query.Length);
+        string linkUrl = "http://jomura.net/FSViewer/backuplog.aspx";
 %><?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
    <channel>
@@ -24,7 +25,8 @@
         {
 		    string title = log.Substring(20);
             string pubDate = DateTime.Parse(log.Substring(0, 18)).ToString("ddd, dd MMM yyyy HH:mm:ss zzz", ci);
-            string guid = DateTime.Parse(log.Substring(0, 18)).ToString("yyyy-MM-ddTHH:mm:sszzz", ci);
+//            string guid = DateTime.Parse(log.Substring(0, 18)).ToString("yyyy-MM-ddTHH:mm:sszzz", ci);
+            string guid = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(pubDate + title, "sha1");
 %>      <item>
          <title><%= HttpUtility.HtmlEncode(title) %></title>
          <link><%= HttpUtility.HtmlEncode(linkUrl) %></link>
